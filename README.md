@@ -92,8 +92,7 @@ For more detailed instructions, see the [MCP Quickstart Guide](https://modelcont
 Alternatively, you can use Cursor as your MCP client:
 
 1. Download and install [Cursor](https://cursor.com)
-2. Open Cursor and follow their MCP integration instructions
-3. Point Cursor to your running MCP server
+2. Open Cursor and follow their MCP integration [instructions](https://docs.cursor.com/context/model-context-protocol)
 
 ## Available Tools
 
