@@ -1,0 +1,11 @@
+# MCP Andreas Assistant Personal
+
+## Project Rules
+
+### Package Management
+- We use `uv` for package management
+- To add a package, use: `uv add <package-name>`
+
+### Code Standards
+- All code must be strictly typed using modern Python annotation types
+- Use type annotations for all function parameters and return values
