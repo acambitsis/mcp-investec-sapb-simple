@@ -1,10 +1,10 @@
 # Investec API MCP Server
 
-This is a Model Context Protocol (MCP) server that provides tools for interacting with the Investec API.
+This is a Model Context Protocol (MCP) server that provides tools for interacting with the Investec SA Private Banking [API](https://developer.investec.com/za/getting-started).
 
 ## Design Philosophy
 
-This MCP server has been intentionally designed with simplicity in mind. The entire implementation is contained in a single file (`server.py`) without unnecessary abstractions or layers. This approach was deliberately chosen for security reasons - when dealing with financial API access, the ability to easily audit and review the full codebase is paramount. The straightforward implementation makes it possible to quickly understand the complete data flow and security model.
+This MCP server has been intentionally designed with simplicity in mind. The entire implementation is contained in a single file (`server.py`) without unnecessary abstractions or layers. This approach was deliberately chosen for security reasons to make it easy to audit and review the full codebase without exessive effort.
 
 ## Installation
 
@@ -30,7 +30,8 @@ This MCP server has been intentionally designed with simplicity in mind. The ent
    CLIENT_ID=your-client-id
    CLIENT_SECRET=your-client-secret
    API_KEY=your-api-key
-   BASE_URL=https://openapisandbox.investec.com  # or https://openapi.investec.com for production
+   USE_SANDBOX=true # or false for production
+   TIMEOUT=30 # seconds
    ```
 
 ## Running the Server
