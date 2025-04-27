@@ -122,7 +122,7 @@ The server provides the following tools:
 
 ## Contributing
 
-Contributions are welcome to improve this MCP server. Key areas for enhancement include:
+Contributions are welcome to improve this MCP server. Beyond bug fixes, key areas for enhancement include:
 
 - Error handling refinements
 - Logging improvements
