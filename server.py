@@ -11,14 +11,16 @@ from mcp.server.fastmcp import FastMCP
 
 # Load environment variables
 load_dotenv()
-
 # Configuration
 CLIENT_ID = os.getenv("CLIENT_ID", "")  # Default to empty string instead of None
 CLIENT_SECRET = os.getenv(
     "CLIENT_SECRET", ""
 )  # Default to empty string instead of None
 API_KEY = os.getenv("API_KEY", "")  # Default to empty string instead of None
-BASE_URL = os.getenv("BASE_URL", "https://openapisandbox.investec.com")
+if os.getenv("USE_SANDBOX") == "true":
+    BASE_URL = "https://openapisandbox.investec.com"
+else:
+    BASE_URL = "https://openapi.investec.com"
 
 # Debug print credentials
 print("DEBUG - Loaded credentials:", file=sys.stderr)
